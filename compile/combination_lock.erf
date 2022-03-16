@@ -1,0 +1,5 @@
+WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
+MESSAGE "File: D:/AGH/PSC/combination_lock_mk/combination_lock/src/lock.vhd" 
+MESSAGE "Compile Entity "lock"" 
+MESSAGE "Compile Architecture "lock" of Entity "lock"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]" 

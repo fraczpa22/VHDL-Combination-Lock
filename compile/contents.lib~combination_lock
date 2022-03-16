@@ -1,0 +1,8 @@
+42
+~E 0 "" 0 combination_lock
+~A 0 "" 0 combination_lock
+~E 1 "../src/lock.vhd" 29 lock
+~A 1 "../src/lock.vhd" 40 lock
+~E 1 "../src/TestBench/lock_TB.vhd" 7 lock_tb
+~A 1 "../src/TestBench/lock_TB.vhd" 10 TB_ARCHITECTURE
+~C 1 "../src/TestBench/lock_TB.vhd" 225 testbench_for_lock

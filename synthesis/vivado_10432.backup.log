@@ -1,0 +1,398 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Feb 10 18:10:09 2022
+# Process ID: 10432
+# Current directory: C:/My_Designs/combination_lock/synthesis
+# Command line: vivado.exe -mode batch -log vivado.log -journal transcript.log -source C:/My_Designs/combination_lock/synthesis/run_vivado.tcl
+# Log file: C:/My_Designs/combination_lock/synthesis/vivado.log
+# Journal file: C:/My_Designs/combination_lock/synthesis\transcript.log
+#-----------------------------------------------------------
+source C:/My_Designs/combination_lock/synthesis/run_vivado.tcl
+# create_project -force combination_lock {C:\My_Designs\combination_lock\synthesis} -part 7a100tcsg324-1
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 288.621 ; gain = 0.000
+# add_files -norecurse {C:/My_Designs/combination_lock/src/lock.vhd}
+# add_files -norecurse {C:/My_Designs/combination_lock/compile/combination_lock.vhd}
+# add_files -norecurse {C:/My_Designs/combination_lock/src/Prescaler.vhd}
+# add_files -norecurse {C:/My_Designs/combination_lock/src/sev_seg.vhd}
+# add_files -norecurse {C:/My_Designs/combination_lock/src/Debouncer.vhd}
+# add_files -norecurse {C:/My_Designs/combination_lock/src/klawiatura.vhd}
+# set_property top combination_lock [current_fileset]
+# set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
+# synth_design -top combination_lock -flatten_hierarchy rebuilt -gated_clock_conversion off -fsm_extraction auto -bufg 12 -fanout_limit 10000 -shreg_min_size 3 -max_bram -1 -max_uram -1 -max_dsp -1 -max_bram_cascade_height -1 -max_uram_cascade_height -1 -cascade_dsp auto -directive default -resource_sharing auto -control_set_opt_threshold auto
+Command: synth_design -top combination_lock -flatten_hierarchy rebuilt -gated_clock_conversion off -fsm_extraction auto -bufg 12 -fanout_limit 10000 -shreg_min_size 3 -max_bram -1 -max_uram -1 -max_dsp -1 -max_bram_cascade_height -1 -max_uram_cascade_height -1 -cascade_dsp auto -directive default -resource_sharing auto -control_set_opt_threshold auto
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 14948 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 719.281 ; gain = 179.039
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-2040] formal port column of mode buffer cannot be associated with actual port column of mode out [C:/My_Designs/combination_lock/compile/combination_lock.vhd:158]
+INFO: [Synth 8-638] synthesizing module 'combination_lock' [C:/My_Designs/combination_lock/compile/combination_lock.vhd:44]
+INFO: [Synth 8-3491] module 'lock' declared at 'C:/My_Designs/combination_lock/src/lock.vhd:29' bound to instance 'U1' of component 'lock' [C:/My_Designs/combination_lock/compile/combination_lock.vhd:122]
+INFO: [Synth 8-638] synthesizing module 'lock' [C:/My_Designs/combination_lock/src/lock.vhd:54]
+WARNING: [Synth 8-614] signal 'PASSCODE' is read in the process but is not in the sensitivity list [C:/My_Designs/combination_lock/src/lock.vhd:83]
+INFO: [Synth 8-256] done synthesizing module 'lock' (1#1) [C:/My_Designs/combination_lock/src/lock.vhd:54]
+INFO: [Synth 8-3491] module 'sev_seg' declared at 'C:/My_Designs/combination_lock/src/sev_seg.vhd:26' bound to instance 'U3' of component 'sev_seg' [C:/My_Designs/combination_lock/compile/combination_lock.vhd:139]
+INFO: [Synth 8-638] synthesizing module 'sev_seg' [C:/My_Designs/combination_lock/src/sev_seg.vhd:45]
+INFO: [Synth 8-226] default block is never used [C:/My_Designs/combination_lock/src/sev_seg.vhd:71]
+INFO: [Synth 8-226] default block is never used [C:/My_Designs/combination_lock/src/sev_seg.vhd:97]
+INFO: [Synth 8-226] default block is never used [C:/My_Designs/combination_lock/src/sev_seg.vhd:122]
+INFO: [Synth 8-226] default block is never used [C:/My_Designs/combination_lock/src/sev_seg.vhd:147]
+INFO: [Synth 8-256] done synthesizing module 'sev_seg' (2#1) [C:/My_Designs/combination_lock/src/sev_seg.vhd:45]
+INFO: [Synth 8-3491] module 'keypad_controller' declared at 'C:/My_Designs/combination_lock/src/klawiatura.vhd:29' bound to instance 'U4' of component 'keypad_controller' [C:/My_Designs/combination_lock/compile/combination_lock.vhd:152]
+INFO: [Synth 8-638] synthesizing module 'keypad_controller' [C:/My_Designs/combination_lock/src/klawiatura.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'keypad_controller' (3#1) [C:/My_Designs/combination_lock/src/klawiatura.vhd:42]
+INFO: [Synth 8-3491] module 'Prescaler' declared at 'C:/My_Designs/combination_lock/src/Prescaler.vhd:20' bound to instance 'U6' of component 'Prescaler' [C:/My_Designs/combination_lock/compile/combination_lock.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'Prescaler' [C:/My_Designs/combination_lock/src/Prescaler.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'Prescaler' (4#1) [C:/My_Designs/combination_lock/src/Prescaler.vhd:31]
+INFO: [Synth 8-3491] module 'Debouncer' declared at 'C:/My_Designs/combination_lock/src/Debouncer.vhd:29' bound to instance 'U7' of component 'Debouncer' [C:/My_Designs/combination_lock/compile/combination_lock.vhd:170]
+INFO: [Synth 8-638] synthesizing module 'Debouncer' [C:/My_Designs/combination_lock/src/Debouncer.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'Debouncer' (5#1) [C:/My_Designs/combination_lock/src/Debouncer.vhd:41]
+INFO: [Synth 8-3491] module 'Debouncer' declared at 'C:/My_Designs/combination_lock/src/Debouncer.vhd:29' bound to instance 'U9' of component 'Debouncer' [C:/My_Designs/combination_lock/compile/combination_lock.vhd:179]
+INFO: [Synth 8-256] done synthesizing module 'combination_lock' (6#1) [C:/My_Designs/combination_lock/compile/combination_lock.vhd:44]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 782.180 ; gain = 241.938
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 782.180 ; gain = 241.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 782.180 ; gain = 241.938
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 897.586 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.166 . Memory (MB): peak = 897.594 ; gain = 0.008
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 897.594 ; gain = 357.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 897.594 ; gain = 357.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 897.594 ; gain = 357.352
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'stan_obecny_reg' in module 'lock'
+INFO: [Synth 8-802] inferred FSM for state register 'stan_obecny_reg' in module 'sev_seg'
+INFO: [Synth 8-5544] ROM "AN" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'COLUMN_reg' in module 'keypad_controller'
+INFO: [Synth 8-5544] ROM "COLUMN" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "COLUMN" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      s0 |                            00001 |                              000
+                      s1 |                            00010 |                              001
+                      s2 |                            00100 |                              010
+                      s3 |                            01000 |                              011
+                      s4 |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'stan_obecny_reg' using encoding 'one-hot' in module 'lock'
+WARNING: [Synth 8-327] inferring latch for variable 'OK_temp_reg' [C:/My_Designs/combination_lock/src/lock.vhd:97]
+WARNING: [Synth 8-327] inferring latch for variable 'WRONG_temp_reg' [C:/My_Designs/combination_lock/src/lock.vhd:98]
+WARNING: [Synth 8-327] inferring latch for variable 'Q1_temp_reg' [C:/My_Designs/combination_lock/src/lock.vhd:112]
+WARNING: [Synth 8-327] inferring latch for variable 'Q2_temp_reg' [C:/My_Designs/combination_lock/src/lock.vhd:126]
+WARNING: [Synth 8-327] inferring latch for variable 'Q3_temp_reg' [C:/My_Designs/combination_lock/src/lock.vhd:139]
+WARNING: [Synth 8-327] inferring latch for variable 'Q0_temp_reg' [C:/My_Designs/combination_lock/src/lock.vhd:102]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    pos1 |                               00 |                               00
+                    pos2 |                               01 |                               01
+                    pos3 |                               10 |                               10
+                    pos4 |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'stan_obecny_reg' using encoding 'sequential' in module 'sev_seg'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                             1110
+                 iSTATE0 |                               01 |                             1101
+                 iSTATE1 |                               10 |                             1011
+                 iSTATE2 |                               11 |                             0111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'COLUMN_reg' using encoding 'sequential' in module 'keypad_controller'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:40 ; elapsed = 00:00:44 . Memory (MB): peak = 897.594 ; gain = 357.352
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	   4 Input      7 Bit        Muxes := 1     
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 9     
+	   2 Input      4 Bit        Muxes := 4     
+	   4 Input      4 Bit        Muxes := 6     
+	   4 Input      2 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module lock 
+Detailed RTL Component Info : 
++---Muxes : 
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 9     
+	   5 Input      1 Bit        Muxes := 3     
+Module sev_seg 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	   4 Input      7 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+Module keypad_controller 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 4     
+	   4 Input      4 Bit        Muxes := 6     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module Debouncer 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3917] design combination_lock has port AN[7] driven by constant 1
+WARNING: [Synth 8-3917] design combination_lock has port AN[6] driven by constant 1
+WARNING: [Synth 8-3917] design combination_lock has port AN[5] driven by constant 1
+WARNING: [Synth 8-3917] design combination_lock has port AN[4] driven by constant 1
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:00:50 . Memory (MB): peak = 897.594 ; gain = 357.352
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:14 ; elapsed = 00:01:20 . Memory (MB): peak = 897.594 ; gain = 357.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:14 ; elapsed = 00:01:20 . Memory (MB): peak = 897.594 ; gain = 357.352
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:14 ; elapsed = 00:01:20 . Memory (MB): peak = 897.594 ; gain = 357.352
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:24 ; elapsed = 00:01:31 . Memory (MB): peak = 903.809 ; gain = 363.566
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:24 ; elapsed = 00:01:31 . Memory (MB): peak = 903.809 ; gain = 363.566
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:24 ; elapsed = 00:01:31 . Memory (MB): peak = 903.809 ; gain = 363.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:24 ; elapsed = 00:01:31 . Memory (MB): peak = 903.809 ; gain = 363.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:24 ; elapsed = 00:01:31 . Memory (MB): peak = 903.809 ; gain = 363.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:24 ; elapsed = 00:01:31 . Memory (MB): peak = 903.809 ; gain = 363.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     7|
+|3     |LUT1   |     2|
+|4     |LUT2   |    39|
+|5     |LUT3   |     3|
+|6     |LUT4   |    13|
+|7     |LUT5   |     7|
+|8     |LUT6   |    37|
+|9     |FDCE   |    39|
+|10    |FDPE   |     5|
+|11    |LD     |    18|
+|12    |IBUF   |     9|
+|13    |OBUF   |    26|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+------------------+------+
+|      |Instance |Module            |Cells |
++------+---------+------------------+------+
+|1     |top      |                  |   206|
+|2     |  U1     |lock              |    71|
+|3     |  U3     |sev_seg           |     8|
+|4     |  U4     |keypad_controller |    16|
+|5     |  U6     |Prescaler         |    66|
+|6     |  U7     |Debouncer         |     4|
+|7     |  U9     |Debouncer_0       |     5|
++------+---------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:24 ; elapsed = 00:01:31 . Memory (MB): peak = 903.809 ; gain = 363.566
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 10 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:59 ; elapsed = 00:01:24 . Memory (MB): peak = 903.809 ; gain = 248.152
+Synthesis Optimization Complete : Time (s): cpu = 00:01:24 ; elapsed = 00:01:31 . Memory (MB): peak = 903.809 ; gain = 363.566
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 25 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 919.484 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 18 instances were transformed.
+  LD => LDCE: 18 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+42 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:43 ; elapsed = 00:01:56 . Memory (MB): peak = 919.484 ; gain = 630.863
+# report_utilization -file {combination_lock_utilization_synth.rpt}
+# write_edf -force {combination_lock.edn}
+C:/My_Designs/combination_lock/synthesis/combination_lock.edn
+# write_vhdl -force {combination_lock.vhd}
+# write_xdc -force {combination_lock.xdc}
+# write_checkpoint -force combination_lock_synth.dcp
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 919.484 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/My_Designs/combination_lock/synthesis/combination_lock_synth.dcp' has been generated.
+INFO: [Common 17-206] Exiting Vivado at Thu Feb 10 18:12:28 2022...

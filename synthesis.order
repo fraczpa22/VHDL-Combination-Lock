@@ -1,0 +1,6 @@
+i<>.\src\lock.vhd
+i<>.\src\combination_lock.bde
+i<>.\src\Prescaler.vhd
+i<>.\src\sev_seg.vhd
+i<>.\src\Debouncer.vhd
+i<>.\src\klawiatura.vhd

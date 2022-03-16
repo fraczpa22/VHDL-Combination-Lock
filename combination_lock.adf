@@ -1,0 +1,364 @@
+[Project]
+Current Flow=Multivendor
+VCS=0
+version=4
+Current Config=compile
+
+[Configurations]
+compile=combination_lock
+
+[Library]
+combination_lock=.\combination_lock\combination_lock.lib
+combination_lock_post_synthesis=.\combination_lock_post_synthesis\combination_lock_post_synthesis.lib
+combination_lock_timing=.\combination_lock_timing\combination_lock_timing.lib
+
+[$LibMap$]
+combination_lock=.
+Active_lib=ARTIX7
+xilinxun=ARTIX7
+UnlinkedDesignLibrary=ARTIX7
+DESIGNS=ARTIX7
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=IMPL_WITH_SYNTH
+ON_SERVERFARM_SYNTH=0
+ON_SERVERFARM_IMPL=0
+ON_SERVERFARM_SIM=0
+RUN_MODE_SYNTH=0
+VerilogDirsChanged=0
+SYNTH_STATUS=warnings
+IMPL_TOOL=MV_VIVADO_IMPL_2019_1
+SYNTH_TOOL=MV_VIVADO_SYNTH_2019_1
+CSYNTH_TOOL=
+PHYSSYNTH_TOOL=
+FAMILY=Xilinx2019x ARTIX7
+FUNC_LIB=combination_lock
+POST_LIB=combination_lock_post_synthesis
+PHYSSYNTH_STATUS=none
+IMPL_STATUS=warnings
+fileopenfolder=C:\My_Designs\new\combination_lock_MK\combination_lock\src
+CSYNTH_STATUS=NONE
+RUN_MODE_IMPL=0
+TIM_LIB=combination_lock_timing
+
+[IMPLEMENTATION]
+UCF=
+IMPL_DONT_RUN_LOGIC_OPTIMIZATION=0
+IMPL_DONT_RUN_POWER_OPTIMIZATION=1
+IMPL_DONT_RUN_PLACE=0
+IMPL_DONT_RUN_POST_PLACE_POWER_OPTIMIZATION=0
+IMPL_DONT_RUN_PLACED_NETLIST_OPTIMIZATION=1
+IMPL_DONT_RUN_ROUTE=0
+IMPL_DONT_RUN_ROUTED_NETLIST_OPTIMIZATION=1
+IMPL_DONT_RUN_BITSTREAM=0
+FLOW_STEPS_RESET=0
+FAMILY=Xilinx2019x ARTIX7
+DEVICE=7a100tcsg324
+SPEED=-1
+NETLIST=synthesis\combination_lock.edn
+CHECKPOINT_FILE=synthesis\combination_lock_synth.dcp
+SYNTH_TOOL_RESET=1
+IMPL_SWEEP=1
+IMPL_RETARGET=1
+IMPL_CONSTANT_PROPAGATION=1
+IMPL_LUT_REMAPPING=0
+IMPL_DIRECTIVE=Default
+IMPL_BRAM_POWER_OPTIMIZATION=0
+IMPL_RESYNTHESIS=0
+IMPL_PLACE_CHECKPOINT=implement\lock_placed.dcp
+IMPL_PLACE_DIRECTIVE=Default
+IMPL_DISABLE_TIMING_DRIVEN_PLACEMENT=0
+IMPL_OTHER_PLACE_COMMAND_LINE_OPTIONS=
+IMPL_ROUTE_CHECKPOINT=implement\lock_routed.dcp
+IMPL_ROUTE_DIRECTIVE=Default
+IMPL_DISABLE_TIMING_DRIVEN_ROUTING=0
+IMPL_PRESERVE=0
+IMPL_UNROUTE=0
+IMPL_OTHER_ROUTE_COMMAND_LINE_OPTIONS=
+IMPL_WRITE_BINARY_BITFILE=1
+IMPL_WRITE_RAW_BITFILE=0
+IMPL_WRITE_MASK_FILE=0
+IMPL_FAMILY=Xilinx2019x ARTIX7
+IMPL_DEVICE=7a100tcsg324
+IMPL_SPEED=-1
+IMPL_RUN_MODE=0
+IMPL_OVERWRITE_EXISTING_PRJ=1
+IMPL_CONSTRAINT_FILE=src\lock.xdc
+IMPL_CONSTRAINT_FILE_MODE=Custom constraint file
+IMPL_SELECTED_TCL_FILE=
+IMPL_NETLIST_FILE=synthesis\lock.edn
+IMPL_AUTO_CLOSE=0
+IMPL_ONE_FILE_MODE=0
+IMPL_RUN_VIVADO_WITH=0
+IMPL_SELECTED_CHECKPOINT_FILE=
+IMPL_PLACED_NETLIST_DIRECTIVE=Default
+IMPL_WRITE_LOGIC_LOCATION_FILE=0
+IMPL_WRITE_BINARY_BIT_FILE_WITHOUT_HEADER=0
+IMPL_REFERENCE_BIT_FILE=
+IMPL_PLACED_NETLIST_FANOUT_OPTIMIZATION=0
+IMPL_PLACED_NETLIST_CRITICAL_CELL_OPTIMIZATION=0
+IMPL_PLACED_NETLIST_REWIRE=0
+IMPL_PLACED_NETLIST_FIX_HOLD_TIME_VIOLATIONS=0
+IMPL_PLACE_INCREMENTAL=0
+IMPL_PLACE_INCREMENTAL_CHECKPOINT=
+IMPL_ENABLE_DIRECTIVE=1
+IMPL_PLACE_ENABLE_DIRECTIVE=1
+IMPL_PLACED_NETLIST_ENABLE_DIRECTIVE=1
+IMPL_PLACED_NETLIST_PLACEMENT_OPTIMIZATION=0
+IMPL_PLACED_NETLIST_DSP_REGISTER_OPTIMIZATION=0
+IMPL_PLACED_NETLIST_BRAM_REGISTER_OPTIMIZATION=0
+IMPL_PLACED_NETLIST_ENABLE_FORCE_REPLICATION=0
+IMPL_PLACED_NETLIST_FORCE_REPLICATION=
+IMPL_ROUTE_ENABLE_DIRECTIVE=1
+IMPL_SIMULATION_OUTPUT_FORMAT=1
+IMPL_RESYNTHESIS_SEQUENTIAL=0
+IMPL_UNPLACE=0
+IMPL_PLACED_NETLIST_CRITICAL_PIN_OPTIMIZATION=0
+IMPL_POST_PLACE_OPTIMIZATION=0
+IMPL_PLACED_NETLIST_BRAM_ENABLE_OPTIMIZATION=0
+IMPL_PLACED_NETLIST_SHIFT_REGISTER_OPTIMIZATION=0
+IMPL_WRITE_READBACK_FILE=0
+IMPL_NETLIST_CHECKPOINT=0
+IMPL_NETLIST_CHECKPOINT_FILE=synthesis\lock_synth.dcp
+IMPL_FIX_TNS_PATHS=0
+IMPL_PLACED_NETLIST_RETIMING_OPTIMIZATION=0
+IMPL_ROUTED_NETLIST_ENABLE_DIRECTIVE=1
+IMPL_ROUTED_NETLIST_DIRECTIVE=Default
+IMPL_ROUTED_NETLIST_RETIMING_OPTIMIZATION=0
+IMPL_ROUTED_NETLIST_CRITICAL_CELL_OPTIMIZATION=0
+IMPL_ROUTED_NETLIST_REWIRE=0
+IMPL_ROUTED_NETLIST_PLACEMENT_OPTIMIZATION=0
+IMPL_ROUTED_NETLIST_ROUTING_OPTIMIZATION=0
+IMPL_ROUTED_NETLIST_CLOCK_SKEW_OPTIMIZATION=0
+IMPL_WRITE_BITSTREAM_ONLY_FOR_SPECIFIC_CELL=
+IMPL_DONT_WRITE_PARTIAL_BIT_FILE=0
+IMPL_GLOBAL_BUFFER_OPTIMIZATION=0
+IMPL_MUXF_REMAPPING=0
+IMPL_CONTROL_SET_MERGING=0
+IMPL_ENABLE_HIERARCHY_FANOUT_LIMIT=0
+IMPL_HIERARCHY_FANOUT_LIMIT=512
+IMPL_PLACED_NETLIST_ENABLE_PATH_GROUPS=0
+IMPL_PLACED_NETLIST_PATH_GROUPS=
+IMPL_ROUTED_NETLIST_CURRENT_ROUTING_PLACEMENT_OPTIMIZATION=0
+IMPL_SHIFT_REGISTER_OPTIMIZATION=0
+IMPL_CARRY_SIGNALS_REMAPPING=0
+IMPL_EQUIVALENT_DRIVERS_MERGING=0
+IMPL_DEBUG_INFO=0
+IMPL_FANOUT_OPTIMIZATION_DURING_PLACEMENT=1
+IMPL_DISABLE_GLOBAL_BUFFER_INSERTION=0
+IMPL_PLACED_NETLIST_URAM_REGISTER_OPTIMIZATION=0
+IMPL_ROUTED_NETLIST_SLR_CROSSING_OPTIMIZATION=0
+IMPL_PLACED_NETLIST_INSERT_NEGATIVE_EDGE_TRIGGERED_FFS=0
+IMPL_ROUTED_NETLIST_INSERT_NEGATIVE_EDGE_TRIGGERED_FFS=0
+IMPL_DSP_REGISTER_OPTIMIZATION=0
+IMPL_PLACED_NETLIST_AGGRESSIVE_HOLD_TIME_VIOLATIONS_FIX=0
+IMPL_ENABLE_TURBO_MODE_ROUTING=0
+IMPL_ROUTED_NETLIST_AGGRESSIVE_HOLD_TIME_VIOLATIONS_FIX=0
+IMPL_AGGRESSIVE_LUT_REMAPPING=0
+IMPL_PLACED_NETLIST_TNS_CLEANUP=0
+IMPL_PLACED_NETLIST_SLR_CROSSING_OPTIMIZATION=0
+IMPL_PLACED_NETLIST_SLL_REGISTER_HOLD_FIX=0
+IMPL_ROUTED_NETLIST_TNS_CLEANUP=0
+IMPL_ROUTED_NETLIST_SLL_REGISTER_HOLD_FIX=0
+IMPL_PROPERTY_OPTIMIZATIONS_ONLY=0
+IMPL_ENABLE_SRL_FFS_REMAPPING=0
+IMPL_SRL_FFS_REMAPPING=Automatic
+IMPL_TARGET_FF_UTIL=0
+IMPL_TARGET_LUTRAM_UTIL=0
+IMPL_MIN_DEPTH_FFS_TO_SRL=0
+IMPL_MAX_DEPTH_SRL_TO_FFS=0
+OLD_FAMILY=Xilinx2019x ARTIX7
+LAST_RUN=1644521531
+OUTPUT_NETLIST=implement\combination_lock.v
+OUTPUT_SDF=implement\combination_lock.sdf
+
+[Folders]
+Name0=Event Lists
+Directory0=c:\My_Designs\combination_lock_MK\combination_lock\
+Extension0=lst
+Name1=Logs
+Directory1=c:\My_Designs\combination_lock_MK\combination_lock\
+Extension1=log;htm;xml;txt
+Name2=Waveforms
+Directory2=c:\My_Designs\combination_lock_MK\combination_lock\
+Extension2=asdb;awc;asdbc;asdbe
+Name3=Makefiles
+Directory3=c:\My_Designs\combination_lock_MK\combination_lock\
+Extension3=mak
+Name4=Memory
+Directory4=c:\My_Designs\combination_lock_MK\combination_lock\
+Extension4=mem;mif;hex
+Name5=Dll Libraries
+Directory5=c:\My_Designs\combination_lock_MK\combination_lock\
+Extension5=dll
+Name6=PDF
+Directory6=c:\My_Designs\combination_lock_MK\combination_lock\
+Extension6=pdf
+Name7=HTML
+Directory7=c:\My_Designs\combination_lock_MK\combination_lock\
+Extension7=htm;html
+Name8=ALINT-PRO Workspaces
+Directory8=c:\My_Designs\combination_lock_MK\combination_lock\
+Extension8=alintws
+
+[SpecTracer]
+WindowVisible=0
+
+[HierarchyViewer]
+HierarchyInformation=lock_tb|testbench_for_lock|1 
+ShowHide=ShowTopLevel
+Selected=
+
+[Groups]
+TestBench=1
+post-synthesis=1
+timing=1
+
+[SIM.POST]
+TOPLEVEL=lock
+
+[SYNTHESIS]
+TOPLEVEL=combination_lock
+OBSOLETE_ALIASES=1
+SYNTH_VIEW_MODE=RTL
+VIEW_MODE=RTL
+SYNTH_TOPLEVEL=combination_lock
+SYNTH_FAMILY=Xilinx2019x ARTIX7
+SYNTH_DEVICE=7a100tcsg324
+SYNTH_SPEED=-1
+SYNTH_RUN_MODE=0
+SYNTH_AUTO_CLOSE=0
+SYNTH_OVERWRITE_EXISTING_PRJ=1
+SYNTH_SIMULATION_OUTPUT_FORMAT=1
+SYNTH_DONT_RUN_SYNTHESIS=0
+SYNTH_SYNTHESIS_CHECKPOINT=
+SYNTH_SYNTHESIS_CONSTRAINT_FILE=
+SYNTH_FLATTEN_HIERARCHY=Rebuilt
+SYNTH_GATED_CLOCK_CONVERSION=Off
+SYNTH_FSM_EXTRACTION=Auto
+SYNTH_DISABLE_LUT_COMBINING=0
+SYNTH_NUMBER_OF_GLOBAL_CLOCK_BUFFERS=12
+SYNTH_FANOUT_LIMIT=10000
+SYNTH_DIRECTIVE=Default
+SYNTH_ADD_SPECIAL_LIBRARY_SOURCES=0
+SYNTH_ONE_FILE_MODE=0
+SYNTH_RUN_VIVADO_WITH=0
+SYNTH_SELECTED_TCL_FILE=
+SYNTH_SELECTED_CHECKPOINT_FILE=
+SYNTH_KEEP_EQUIVALENT_REGISTERS=0
+SYNTH_RESOURCE_SHARING=Auto
+SYNTH_CONTROL_SET_OPTIMIZATION_THRESHOLD=Auto
+SYNTH_SHIFT_REGISTER_MINIMUM_SIZE=3
+SYNTH_MAX_BRAM=-1
+SYNTH_MAX_DSP=-1
+SYNTH_CASCADE_DSP=Auto
+SYNTH_MAX_URAM=-1
+SYNTH_MAX_CASCADED_BRAM=-1
+SYNTH_MAX_CASCADED_URAM=-1
+SYNTH_RETIMING=0
+SYNTH_DISABLE_SHIFT_REGISTER_EXTRACTION=0
+SYNTH_ENABLE_VHDL_ASSERT_STATEMENT=0
+SYNTH_DISABLE_TIMING_DRIVEN=0
+SYNTH_INCREMENTAL=0
+SYNTH_INCREMENTAL_CHECKPOINT=
+FAMILY=Xilinx2019x ARTIX7
+DEVICE=7a100tcsg324
+SPEED=-1
+OLD_FAMILY=Xilinx2019x ARTIX7
+OUTPUT_NETLIST=synthesis\combination_lock.edn
+LAST_RUN=1644521290
+OUTPUT_SIMUL_NETLIST=synthesis\combination_lock.vhd
+
+[PHYS_SYNTHESIS]
+FAMILY=
+DEVICE=
+SPEED=
+SCRIPTS_COPIED=0
+IN_DESIGN=synthesis\combination_lock.edn
+OUT_DESIGN=
+IN_CONSTRAINT=
+OUT_CONSTRAINT=
+REPORT=
+
+[SIM.TIME]
+TOPLEVEL=lock glbl
+SDF_PATH=implement\combination_lock.sdf
+
+[sdf.ea.lock-STRUCTURE]
+0=implement\lock.sdf| /lock, Average, No
+
+[sdf.c.testbench_for_lock]
+0=implement\lock.sdf| /lock_tb_synth/UUT, Average, No
+
+[sdf.vmm.lock_tb_tim glbl]
+0=implement\lock.sdf| /lock_tb_tim/UUT, Average, No
+
+[Files]
+/lock.vhd=-1
+/wpisywanie_naodp_pozycje.asdb=-1
+/wpisywanie_naodp_pozycje.awc=-1
+/not_ok.asdb=-1
+/not_ok.awc=-1
+/wave.asdb=-1
+/wave.awc=-1
+/lock.xdc=-1
+/lock.asdb=-1
+/lock.awc=-1
+/combination_lock.bde=-1
+/Prescaler.vhd=-1
+/sev_seg.vhd=-1
+/Debouncer.vhd=-1
+/klawiatura.vhd=-1
+TestBench/lock_TB.vhd=-1
+TestBench/lock_TB_runtest.do=-1
+TestBench/lock_TB_synth.vhd=-1
+TestBench/lock_TB_synth_runtest.do=-1
+TestBench/lock_TB_tim.v=-1
+TestBench/lock_TB_tim_runtest.do=-1
+post-synthesis/..\..\synthesis\lock.edn=-1
+post-synthesis/..\..\synthesis\lock.vhd=-1
+post-synthesis/..\..\synthesis\combination_lock.edn=-1
+post-synthesis/..\..\synthesis\combination_lock.vhd=-1
+timing/..\..\implement\lock.v=-1
+timing/..\..\implement\lock.sdf=-1
+timing/..\..\implement\glbl.v=-1
+timing/..\..\implement\combination_lock.v=-1
+timing/..\..\implement\combination_lock.sdf=-1
+
+[Files.Data]
+.\src\lock.vhd=VHDL Source Code
+.\src\wpisywanie_naodp_pozycje.asdb=Accelerated Waveform File
+.\src\wpisywanie_naodp_pozycje.awc=Accelerated Waveform Configuration
+.\src\not_ok.asdb=Accelerated Waveform File
+.\src\not_ok.awc=Accelerated Waveform Configuration
+.\src\wave.asdb=Accelerated Waveform File
+.\src\wave.awc=Accelerated Waveform Configuration
+.\src\lock.xdc=External File
+.\src\lock.asdb=Accelerated Waveform File
+.\src\lock.awc=Accelerated Waveform Configuration
+.\src\combination_lock.bde=Block Diagram
+.\src\Prescaler.vhd=VHDL Source Code
+.\src\sev_seg.vhd=VHDL Source Code
+.\src\Debouncer.vhd=VHDL Source Code
+.\src\klawiatura.vhd=VHDL Source Code
+.\src\TestBench\lock_TB.vhd=VHDL Test Bench
+.\src\TestBench\lock_TB_runtest.do=Macro
+.\src\TestBench\lock_TB_synth.vhd=VHDL Test Bench
+.\src\TestBench\lock_TB_synth_runtest.do=Macro
+.\src\TestBench\lock_TB_tim.v=Verilog Test Bench
+.\src\TestBench\lock_TB_tim_runtest.do=Macro
+.\synthesis\lock.edn=EDIF Netlist
+.\synthesis\lock.vhd=VHDL Source Code
+.\synthesis\combination_lock.edn=EDIF Netlist
+.\synthesis\combination_lock.vhd=VHDL Source Code
+.\implement\lock.v=VERILOG SOURCE CODE
+.\implement\lock.sdf=SDF FILE
+.\implement\glbl.v=VERILOG SOURCE CODE
+.\implement\combination_lock.v=VERILOG SOURCE CODE
+.\implement\combination_lock.sdf=SDF FILE
+
+[file_out:/combination_lock.bde]
+/..\compile\combination_lock.vhd=-1

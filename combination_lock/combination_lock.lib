@@ -1,0 +1,49 @@
+timestamp=1644525458948
+
+[~A]
+ModifyID=42
+Version=74
+
+[~MFT]
+0=8|0combination_lock.mgf|57083|49414
+1=2|1combination_lock.mgf|129500|125789
+3=2|3combination_lock.mgf|35821|34301
+
+[combination_lock]
+A/combination_lock=24|../src/combination_lock.bde|10000|
+
+[lock]
+A/lock=21|../src/lock.vhd|40|1*129500
+BinI32/lock=3*35821
+I=0*928
+I/lock=0*57083
+M=11|0|ve4|1644514955232|../src/lock.vhd|0*264*0x816e72c37d3af0cd68149d2287107e2a46523192|0*855*0x23b75c12e3e89f2ef000564498faa8c2
+M/lock=21|0|ve4|1644525458932|../src/lock.vhd|0*54994*0x37789cab3237e2de8c521061c64c0966386bce75|0*57002*0x20116f55b147878295aeff36dce7fc50
+R=../src/lock.vhd|29
+Version=11.1.261.7351 (Windows)|00000003789cd3f5370600015b00b0|75979c91edb4ed5f728dca071125cacac45c4d220ddfc3031eff56c2292b82cd
+Version/lock=11.1.262.7351 (Windows)|00000003789cd3f5370600015b00b0|75979c91edb4ed5f728dca071125cacac64dc374e57d45c8d14e8f592df086ab
+
+[lock_tb]
+A/tb_architecture=A/TB_ARCHITECTURE 21|../src/TestBench/lock_TB.vhd|10|1*122697
+BinI32/tb_architecture=3*34301
+I=0*5998
+I/tb_architecture=I/TB_ARCHITECTURE 0*52103
+M=11|0|ve4|1644515318558|../src/TestBench/lock_TB.vhd|0*5705*0x7412a551d02b6971bf3bf376d38491369b50d7f6|0*5909*0x23b75c12e3e89f2ef000564498faa8c2
+M/tb_architecture=M/TB_ARCHITECTURE 21|0|ve4|1644524998780|../src/TestBench/lock_TB.vhd|0*35683*0xbd4dc7cff50ff85b19154019d501d02972d6d6b5|0*38402*0x20116f55b147878295aeff36dce7fc50
+R=../src/TestBench/lock_TB.vhd|7
+Version=11.1.261.7351 (Windows)|00000003789cd3f5370600015b00b0|26e3b81189a4a88d9c26a2f5f05591ed26527262ddaa47cb266f3a3c4d9b973ae26ed36fe0aa89f4a5c8c1790a4469f8
+Version/tb_architecture=11.1.262.7351 (Windows)|00000003789cd3f5370600015b00b0|da2d76821309f33ed1264ca4678a936a8f84fef0fc5d0f10f1a8cfc2ad534bea87bafda0210a65570892b6e147092fed
+
+[testbench_for_lock]
+Configures=lock_tb.TB_ARCHITECTURE
+E=1*125983
+I=0*52431
+M=2|0|ve4|1644524998783|../src/TestBench/lock_TB.vhd|0*38838*0xe9a2b9e59780d5f58330b5f3bc6aa4a3f43ad9ae|0*39094*0x20116f55b147878295aeff36dce7fc50
+R=../src/TestBench/lock_TB.vhd|225
+Version=11.1.262.7351 (Windows)|00000003789cd3f5370600015b00b0|5efd636a07bb57613e35fadc81a5c3e5a0cc0c7743e2e5b80c714b8ec8292d2a183a9624ee086d3f71c8cd4e64935ceb
+
+[~U]
+combination_lock=11||
+lock=11|0*0|
+lock_tb=11|0*5585|
+testbench_for_lock=TESTBENCH_FOR_lock 2||

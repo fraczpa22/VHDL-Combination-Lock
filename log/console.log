@@ -1,0 +1,344 @@
+# Warning: You do not have valid license to open EDIF Netlist files. Contact Aldec for ordering information - sales@aldec.com.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# Design Explorer: Shortcut to "D:\AGH\PSC\combination_lock_mk\combination_lock\combination_lock.aws" workspace added.
+acom -O3 -e 100 -work combination_lock -2002  $dsn/src/lock.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/AGH/PSC/combination_lock_mk/combination_lock/src/lock.vhd
+# Compile Entity "lock"
+# Compile Architecture "lock" of Entity "lock"
+# Error: COMP96_0015: lock.vhd : (145, 19): ';' expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work combination_lock -2002  $dsn/src/lock.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/AGH/PSC/combination_lock_mk/combination_lock/src/lock.vhd
+# Compile Entity "lock"
+# Compile Architecture "lock" of Entity "lock"
+# Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]
+SetActiveLib -work
+comp -include "$dsn\src\lock.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/AGH/PSC/combination_lock_mk/combination_lock/src/lock.vhd
+# Compile Entity "lock"
+# Compile Architecture "lock" of Entity "lock"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+comp -include "$dsn\src\TestBench\lock_TB.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/AGH/PSC/combination_lock_mk/combination_lock/src/TestBench/lock_TB.vhd
+# Compile Entity "lock_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "lock_tb"
+# Compile Configuration "TESTBENCH_FOR_lock"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+asim +access +r TESTBENCH_FOR_lock 
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7206 kB (elbread=1280 elab2=5788 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location D:\AGH\PSC\combination_lock_mk\combination_lock\src\wave.asdb
+#  21:19, czwartek, 10 lutego 2022
+#  Simulation has been initialized
+wave  
+wave -noreg CLK
+wave -noreg CLR
+wave -noreg CE
+wave -noreg BACK
+wave -noreg DATA
+wave -noreg PUSH
+wave -noreg WRONG
+wave -noreg OK
+wave -noreg ILE_PROB
+wave -noreg JAKI_STAN
+wave -noreg Q0
+wave -noreg Q1
+wave -noreg Q2
+wave -noreg Q3
+run 3300.00 ns
+# 14 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'D:/AGH/PSC/combination_lock_mk/combination_lock/src/wave.asdb'.
+# KERNEL: stopped at time: 3300 ns
+# # The following lines can be used for timing simulation
+# # acom <backannotated_vhdl_file_name>
+# # comp -include "$dsn\src\TestBench\lock_TB_tim_cfg.vhd" 
+# # asim +access +r TIMING_FOR_lock 
+acom -O3 -e 100 -work combination_lock -2002  $dsn/src/lock.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/AGH/PSC/combination_lock_mk/combination_lock/src/lock.vhd
+# Compile Entity "lock"
+# Compile Architecture "lock" of Entity "lock"
+# Error: COMP96_0242: lock.vhd : (145, 7): Wait statement in process with explicit sensitivity list is not allowed.
+# Error: COMP96_0085: lock.vhd : (145, 16): Time expression expected.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work combination_lock -2002  $dsn/src/lock.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/AGH/PSC/combination_lock_mk/combination_lock/src/lock.vhd
+# Compile Entity "lock"
+# Compile Architecture "lock" of Entity "lock"
+# Error: COMP96_0242: lock.vhd : (145, 7): Wait statement in process with explicit sensitivity list is not allowed.
+# Error: COMP96_0085: lock.vhd : (145, 16): Time expression expected.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work combination_lock -2002  $dsn/src/lock.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/AGH/PSC/combination_lock_mk/combination_lock/src/lock.vhd
+# Compile Entity "lock"
+# Compile Architecture "lock" of Entity "lock"
+# Error: COMP96_0015: lock.vhd : (145, 19): ';' expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work combination_lock -2002  $dsn/src/lock.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/AGH/PSC/combination_lock_mk/combination_lock/src/lock.vhd
+# Compile Entity "lock"
+# Compile Architecture "lock" of Entity "lock"
+# Error: COMP96_0242: lock.vhd : (145, 7): Wait statement in process with explicit sensitivity list is not allowed.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work combination_lock -2002  $dsn/src/lock.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/AGH/PSC/combination_lock_mk/combination_lock/src/lock.vhd
+# Compile Entity "lock"
+# Compile Architecture "lock" of Entity "lock"
+# Error: COMP96_0015: lock.vhd : (145, 19): ';' expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work combination_lock -2002  $dsn/src/lock.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/AGH/PSC/combination_lock_mk/combination_lock/src/lock.vhd
+# Compile Entity "lock"
+# Compile Architecture "lock" of Entity "lock"
+# Error: COMP96_0015: lock.vhd : (145, 19): ';' expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work combination_lock -2002  $dsn/src/lock.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/AGH/PSC/combination_lock_mk/combination_lock/src/lock.vhd
+# Compile Entity "lock"
+# Compile Architecture "lock" of Entity "lock"
+# Error: COMP96_0015: lock.vhd : (147, 11): ';' expected.
+# Error: COMP96_0019: lock.vhd : (147, 11): Keyword 'end' expected.
+# Error: COMP96_0019: lock.vhd : (152, 6): Keyword 'end' expected.
+# Error: COMP96_0019: lock.vhd : (153, 7): Keyword 'case' expected.
+# Error: COMP96_0019: lock.vhd : (154, 10): Keyword 'process' expected.
+# Error: COMP96_0015: lock.vhd : (156, 9): ';' expected.
+# Error: COMP96_0016: lock.vhd : (156, 11): Design unit declaration expected.
+# Compile failure 7 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work combination_lock -2002  $dsn/src/lock.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/AGH/PSC/combination_lock_mk/combination_lock/src/lock.vhd
+# Compile Entity "lock"
+# Compile Architecture "lock" of Entity "lock"
+# Error: COMP96_0242: lock.vhd : (146, 7): Wait statement in process with explicit sensitivity list is not allowed.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work combination_lock -2002  $dsn/src/lock.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/AGH/PSC/combination_lock_mk/combination_lock/src/lock.vhd
+# Compile Entity "lock"
+# Compile Architecture "lock" of Entity "lock"
+# Error: COMP96_0015: lock.vhd : (146, 19): ';' expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work combination_lock -2002  $dsn/src/lock.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/AGH/PSC/combination_lock_mk/combination_lock/src/lock.vhd
+# Compile Entity "lock"
+# Compile Architecture "lock" of Entity "lock"
+# Error: COMP96_0242: lock.vhd : (146, 7): Wait statement in process with explicit sensitivity list is not allowed.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work combination_lock -2002  $dsn/src/lock.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/AGH/PSC/combination_lock_mk/combination_lock/src/lock.vhd
+# Compile Entity "lock"
+# Compile Architecture "lock" of Entity "lock"
+# Error: COMP96_0019: lock.vhd : (149, 47): Keyword 'then' expected.
+# Error: COMP96_0019: lock.vhd : (149, 48): Keyword 'end' expected.
+# Error: COMP96_0019: lock.vhd : (155, 6): Keyword 'end' expected.
+# Error: COMP96_0019: lock.vhd : (156, 7): Keyword 'case' expected.
+# Error: COMP96_0019: lock.vhd : (157, 10): Keyword 'process' expected.
+# Error: COMP96_0015: lock.vhd : (159, 9): ';' expected.
+# Error: COMP96_0016: lock.vhd : (159, 11): Design unit declaration expected.
+# Compile failure 7 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work combination_lock -2002  $dsn/src/lock.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/AGH/PSC/combination_lock_mk/combination_lock/src/lock.vhd
+# Compile Entity "lock"
+# Compile Architecture "lock" of Entity "lock"
+# Error: COMP96_0078: lock.vhd : (85, 5): Unknown identifier "Bylo".
+# Error: COMP96_0133: lock.vhd : (85, 5): Cannot find object declaration.
+# Error: COMP96_0078: lock.vhd : (146, 36): Unknown identifier "Bylo".
+# Error: COMP96_0133: lock.vhd : (146, 36): Cannot find object declaration.
+# Error: COMP96_0077: lock.vhd : (146, 10): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0123: lock.vhd : (147, 8): Variable or constant cannot be the target of a signal assignment.
+# Error: COMP96_0143: lock.vhd : (147, 8): Object "ILE_PROB_temp" cannot be written.
+# Error: COMP96_0078: lock.vhd : (148, 8): Unknown identifier "Bylo".
+# Error: COMP96_0133: lock.vhd : (148, 8): Cannot find object declaration.
+# Error: COMP96_0078: lock.vhd : (149, 39): Unknown identifier "Bylo".
+# Error: COMP96_0133: lock.vhd : (149, 39): Cannot find object declaration.
+# Error: COMP96_0077: lock.vhd : (149, 13): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: lock.vhd : (150, 8): Unknown identifier "Bylo".
+# Error: COMP96_0133: lock.vhd : (150, 8): Cannot find object declaration.
+# Error: COMP96_0123: lock.vhd : (151, 8): Variable or constant cannot be the target of a signal assignment.
+# Error: COMP96_0143: lock.vhd : (151, 8): Object "ILE_PROB_temp" cannot be written.
+# Compile failure 16 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work combination_lock -2002  $dsn/src/lock.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/AGH/PSC/combination_lock_mk/combination_lock/src/lock.vhd
+# Compile Entity "lock"
+# Compile Architecture "lock" of Entity "lock"
+# Error: COMP96_0078: lock.vhd : (85, 5): Unknown identifier "Bylo".
+# Error: COMP96_0133: lock.vhd : (85, 5): Cannot find object declaration.
+# Error: COMP96_0078: lock.vhd : (146, 36): Unknown identifier "Bylo".
+# Error: COMP96_0133: lock.vhd : (146, 36): Cannot find object declaration.
+# Error: COMP96_0077: lock.vhd : (146, 10): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0123: lock.vhd : (147, 8): Variable or constant cannot be the target of a signal assignment.
+# Error: COMP96_0143: lock.vhd : (147, 8): Object "ILE_PROB_temp" cannot be written.
+# Error: COMP96_0078: lock.vhd : (148, 8): Unknown identifier "Bylo".
+# Error: COMP96_0133: lock.vhd : (148, 8): Cannot find object declaration.
+# Error: COMP96_0078: lock.vhd : (149, 39): Unknown identifier "Bylo".
+# Error: COMP96_0133: lock.vhd : (149, 39): Cannot find object declaration.
+# Error: COMP96_0077: lock.vhd : (149, 13): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: lock.vhd : (150, 8): Unknown identifier "Bylo".
+# Error: COMP96_0133: lock.vhd : (150, 8): Cannot find object declaration.
+# Error: COMP96_0123: lock.vhd : (151, 8): Variable or constant cannot be the target of a signal assignment.
+# Error: COMP96_0143: lock.vhd : (151, 8): Object "ILE_PROB_temp" cannot be written.
+# Compile failure 16 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work combination_lock -2002  $dsn/src/lock.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/AGH/PSC/combination_lock_mk/combination_lock/src/lock.vhd
+# Compile Entity "lock"
+# Compile Architecture "lock" of Entity "lock"
+# Error: COMP96_0078: lock.vhd : (86, 5): Unknown identifier "Bylo".
+# Error: COMP96_0133: lock.vhd : (86, 5): Cannot find object declaration.
+# Error: COMP96_0078: lock.vhd : (147, 36): Unknown identifier "Bylo".
+# Error: COMP96_0133: lock.vhd : (147, 36): Cannot find object declaration.
+# Error: COMP96_0077: lock.vhd : (147, 10): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: lock.vhd : (149, 8): Unknown identifier "Bylo".
+# Error: COMP96_0133: lock.vhd : (149, 8): Cannot find object declaration.
+# Error: COMP96_0078: lock.vhd : (150, 39): Unknown identifier "Bylo".
+# Error: COMP96_0133: lock.vhd : (150, 39): Cannot find object declaration.
+# Error: COMP96_0077: lock.vhd : (150, 13): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: lock.vhd : (151, 8): Unknown identifier "Bylo".
+# Error: COMP96_0133: lock.vhd : (151, 8): Cannot find object declaration.
+# Compile failure 12 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work combination_lock -2002  $dsn/src/lock.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/AGH/PSC/combination_lock_mk/combination_lock/src/lock.vhd
+# Compile Entity "lock"
+# Compile Architecture "lock" of Entity "lock"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+SetActiveLib -work
+comp -include "$dsn\src\lock.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/AGH/PSC/combination_lock_mk/combination_lock/src/lock.vhd
+# Compile Entity "lock"
+# Compile Architecture "lock" of Entity "lock"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+comp -include "$dsn\src\TestBench\lock_TB.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/AGH/PSC/combination_lock_mk/combination_lock/src/TestBench/lock_TB.vhd
+# Compile Entity "lock_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "lock_tb"
+# Compile Configuration "TESTBENCH_FOR_lock"
+# Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]
+asim +access +r TESTBENCH_FOR_lock 
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7207 kB (elbread=1280 elab2=5788 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location D:\AGH\PSC\combination_lock_mk\combination_lock\src\wave.asdb
+#  21:29, czwartek, 10 lutego 2022
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'D:/AGH/PSC/combination_lock_mk/combination_lock/src/wave.asdb'.
+wave  
+wave -noreg CLK
+wave -noreg CLR
+wave -noreg CE
+wave -noreg BACK
+wave -noreg DATA
+wave -noreg PUSH
+wave -noreg WRONG
+wave -noreg OK
+wave -noreg ILE_PROB
+wave -noreg JAKI_STAN
+wave -noreg Q0
+wave -noreg Q1
+wave -noreg Q2
+wave -noreg Q3
+run 3300.00 ns
+# KERNEL: Warning: KERNEL_0291 Signal '/lock_tb/CLK' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/lock_tb/CLR' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/lock_tb/CE' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/lock_tb/BACK' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/lock_tb/DATA' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/lock_tb/PUSH' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/lock_tb/WRONG' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/lock_tb/OK' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/lock_tb/ILE_PROB' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/lock_tb/JAKI_STAN' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/lock_tb/Q0' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/lock_tb/Q1' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/lock_tb/Q2' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/lock_tb/Q3' has already been traced.
+# 0 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'D:/AGH/PSC/combination_lock_mk/combination_lock/src/wave.asdb'.
+# KERNEL: stopped at time: 3300 ns
+# # The following lines can be used for timing simulation
+# # acom <backannotated_vhdl_file_name>
+# # comp -include "$dsn\src\TestBench\lock_TB_tim_cfg.vhd" 
+# # asim +access +r TIMING_FOR_lock 
+acom -O3 -e 100 -work combination_lock -2002  $dsn/src/lock.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/AGH/PSC/combination_lock_mk/combination_lock/src/lock.vhd
+# Compile Entity "lock"
+# Compile Architecture "lock" of Entity "lock"
+# Error: COMP96_0393: lock.vhd : (90, 14): Cannot read output : "Q1".
+# Error: COMP96_0393: lock.vhd : (90, 11): Cannot read output : "Q0".
+# Warning: COMP96_0367: lock.vhd : (90, 11): Improper array length (8). Expected length is 4.
+# Compile failure 2 Errors 1 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work combination_lock -2002  $dsn/src/lock.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/AGH/PSC/combination_lock_mk/combination_lock/src/lock.vhd
+# Compile Entity "lock"
+# Compile Architecture "lock" of Entity "lock"
+# Error: COMP96_0123: lock.vhd : (90, 5): Variable or constant cannot be the target of a signal assignment.
+# Error: COMP96_0143: lock.vhd : (90, 5): Object "Q0_temp" cannot be written.
+# Warning: COMP96_0367: lock.vhd : (90, 16): Improper array length (8). Expected length is 4.
+# Compile failure 2 Errors 1 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work combination_lock -2002  $dsn/src/lock.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/AGH/PSC/combination_lock_mk/combination_lock/src/lock.vhd
+# Compile Entity "lock"
+# Compile Architecture "lock" of Entity "lock"
+# Warning: COMP96_0367: lock.vhd : (90, 16): Improper array length (8). Expected length is 4.
+# Compile success 0 Errors 1 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work combination_lock -2002  $dsn/src/lock.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/AGH/PSC/combination_lock_mk/combination_lock/src/lock.vhd
+# Compile Entity "lock"
+# Compile Architecture "lock" of Entity "lock"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
